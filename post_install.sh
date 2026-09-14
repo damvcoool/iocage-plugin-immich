@@ -32,7 +32,7 @@ sysrc postgresql_enable=YES
 # Initialize PostgreSQL database if not already done
 if [ ! -d /var/db/postgres/data18 ]; then
     echo "Initializing PostgreSQL database..."
-    su -m postgres -c 'pg_ctl init -D /var/db/postgres/data18 -A trust -U postgres -W ""'
+    service postgresql initdb
 fi
 
 # Configure PostgreSQL to load vchord.so in shared_preload_libraries.
