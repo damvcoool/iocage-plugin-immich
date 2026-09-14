@@ -1,4 +1,3 @@
-```sh
 #!/bin/sh
 
 set -eu
@@ -397,4 +396,3 @@ else
 fi
 
 echo "Immich setup complete. Web interface available at port 2283."
-```
